@@ -1,0 +1,134 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+SHELL := cmd.exe
+RM := rm -rf
+
+USER_OBJS :=
+
+LIBS := 
+PROJ := 
+
+O_SRCS := 
+C_SRCS := 
+S_SRCS := 
+S_UPPER_SRCS := 
+OBJ_SRCS := 
+ASM_SRCS := 
+PREPROCESSING_SRCS := 
+OBJS := 
+OBJS_AS_ARGS := 
+C_DEPS := 
+C_DEPS_AS_ARGS := 
+EXECUTABLES := 
+OUTPUT_FILE_PATH :=
+OUTPUT_FILE_PATH_AS_ARGS :=
+AVR_APP_PATH :=$$$AVR_APP_PATH$$$
+QUOTE := "
+ADDITIONAL_DEPENDENCIES:=
+OUTPUT_FILE_DEP:=
+LIB_DEP:=
+LINKER_SCRIPT_DEP:=
+
+# Every subdirectory with source files must be described here
+SUBDIRS := 
+
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS +=  \
+../GeoCache.cpp
+
+
+PREPROCESSING_SRCS += 
+
+
+ASM_SRCS += 
+
+
+OBJS +=  \
+GeoCache.o
+
+OBJS_AS_ARGS +=  \
+GeoCache.o
+
+C_DEPS +=  \
+GeoCache.d
+
+C_DEPS_AS_ARGS +=  \
+GeoCache.d
+
+OUTPUT_FILE_PATH +=GeoCashProject.elf
+
+OUTPUT_FILE_PATH_AS_ARGS +=GeoCashProject.elf
+
+ADDITIONAL_DEPENDENCIES:=
+
+OUTPUT_FILE_DEP:= ./makedep.mk
+
+LIB_DEP+=  \
+F:/GPS_Project/COASolutions/ArduinoCore/Release/libArduinoCore.a \
+F:/GPS_Project/COASolutions/NeoPixel/Release/libNeoPixel.a \
+F:/GPS_Project/COASolutions/OneSheeld/Release/libOneSheeld.a \
+F:/GPS_Project/COASolutions/SecureDigital/Release/libSecureDigital.a \
+F:/GPS_Project/COASolutions/SoftwareSerial/Release/libSoftwareSerial.a
+
+LINKER_SCRIPT_DEP+= 
+
+
+# AVR32/GNU C Compiler
+
+
+
+./%.o: .././%.cpp
+	@echo Building file: $<
+	@echo Invoking: AVR8/GNU C Compiler : 4.9.2
+	$(QUOTE)F:\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -funsigned-char -funsigned-bitfields -DARDUINO=168 -DF_CPU=16000000L -DNDEBUG  -I"../../ArduinoCore" -I"../../OneSheeld" -I"../../NeoPixel" -I"../../SoftwareSerial" -I"../../SecureDigital"  -Os -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -mmcu=atmega328p -B "F:\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.106\gcc\dev\atmega328p" -c -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
+	@echo Finished building: $<
+	
+
+
+
+# AVR32/GNU Preprocessing Assembler
+
+
+
+# AVR32/GNU Assembler
+
+
+
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+endif
+
+# Add inputs and outputs from these tool invocations to the build variables 
+
+# All Target
+all: $(OUTPUT_FILE_PATH) $(ADDITIONAL_DEPENDENCIES)
+
+$(OUTPUT_FILE_PATH): $(OBJS) $(USER_OBJS) $(OUTPUT_FILE_DEP) $(LIB_DEP) $(LINKER_SCRIPT_DEP)
+	@echo Building target: $@
+	@echo Invoking: AVR8/GNU Linker : 4.9.2
+	$(QUOTE)F:\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-g++.exe$(QUOTE) -o$(OUTPUT_FILE_PATH_AS_ARGS) $(OBJS_AS_ARGS) $(USER_OBJS) $(LIBS) -Wl,-Map="GeoCashProject.map" -Wl,--start-group -Wl,-lArduinoCore -Wl,-lNeoPixel -Wl,-lOneSheeld -Wl,-lSecureDigital -Wl,-lSoftwareSerial  -Wl,--end-group -Wl,-L"F:\GPS_Project\COASolutions\ArduinoCore\Release" -Wl,-L"F:\GPS_Project\COASolutions\NeoPixel\Release" -Wl,-L"F:\GPS_Project\COASolutions\OneSheeld\Release" -Wl,-L"F:\GPS_Project\COASolutions\SecureDigital\Release" -Wl,-L"F:\GPS_Project\COASolutions\SoftwareSerial\Release"  -Wl,--gc-sections -mmcu=atmega328p -B "F:\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.0.106\gcc\dev\atmega328p"  
+	@echo Finished building target: $@
+	"F:\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O ihex -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures  "GeoCashProject.elf" "GeoCashProject.hex"
+	"F:\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -j .eeprom  --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0  --no-change-warnings -O ihex "GeoCashProject.elf" "GeoCashProject.eep" || exit 0
+	"F:\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objdump.exe" -h -S "GeoCashProject.elf" > "GeoCashProject.lss"
+	"F:\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-objcopy.exe" -O srec -R .eeprom -R .fuse -R .lock -R .signature -R .user_signatures "GeoCashProject.elf" "GeoCashProject.srec"
+	"F:\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-size.exe" "GeoCashProject.elf"
+	
+	
+
+
+
+
+
+# Other Targets
+clean:
+	-$(RM) $(OBJS_AS_ARGS) $(EXECUTABLES)  
+	-$(RM) $(C_DEPS_AS_ARGS)   
+	rm -rf "GeoCashProject.elf" "GeoCashProject.a" "GeoCashProject.hex" "GeoCashProject.lss" "GeoCashProject.eep" "GeoCashProject.map" "GeoCashProject.srec" "GeoCashProject.usersignatures"
+	

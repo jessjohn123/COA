@@ -1,0 +1,24 @@
+
+Modified Arduino.h abs():
+
+	#define abs(x) ((x)>0.0?(x):-(x))
+
+Modified/Added Arduino.h WMath.h map() fmap():
+
+	long map(long x, long in_min, long in_max, long out_min, long out_max)
+	{
+		if (x < in_min) x = in_min;
+		if (x > in_max) x = in_max;
+
+	  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+	}
+
+	long fmap(float x, float in_min, float in_max, float out_min, float out_max)
+	{
+		if (x < in_min) x = in_min;
+		if (x > in_max) x = in_max;
+
+		return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+	}
+
+Added: wire.c/wire.h, twi.c/twi.h spi.c/spi.h

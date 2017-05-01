@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ArduinoCore", "ArduinoCore\ArduinoCore.cppproj", "{CE545FE4-DF2E-4190-A21A-5ACEB2957BA6}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Debugger", "Debugger\Debugger.cppproj", "{0F219E54-F79B-4204-B873-64C7980873C3}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Servo", "Servo\Servo.cppproj", "{20E844C9-ABE9-4731-9441-9C1EBAB64E64}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "NeoPixelTest", "NeoPixelTest\NeoPixelTest.cppproj", "{BB2C60AC-9332-4C87-8749-69F671FACDC7}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "NeoPixel", "NeoPixel\NeoPixel.cppproj", "{16068E77-23A6-4315-A35F-D71097CA8EE5}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "GeoCashProject", "GeoCashProject\GeoCashProject.cppproj", "{28356B03-DAED-43DE-B083-1EBE76C0EA8C}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "SoftwareSerial", "SoftwareSerial\SoftwareSerial.cppproj", "{01562194-0645-47C4-BF54-F6C462481760}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "SecureDigital", "SecureDigital\SecureDigital.cppproj", "{9A914A2A-D2BC-4B67-84A1-397A4491F6F0}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "OneSheeld", "OneSheeld\OneSheeld.cppproj", "{4C911888-7DC7-432D-99F4-EADED8543758}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE545FE4-DF2E-4190-A21A-5ACEB2957BA6}.Debug|AVR.ActiveCfg = Debug|AVR
+		{CE545FE4-DF2E-4190-A21A-5ACEB2957BA6}.Debug|AVR.Build.0 = Debug|AVR
+		{CE545FE4-DF2E-4190-A21A-5ACEB2957BA6}.Release|AVR.ActiveCfg = Release|AVR
+		{CE545FE4-DF2E-4190-A21A-5ACEB2957BA6}.Release|AVR.Build.0 = Release|AVR
+		{0F219E54-F79B-4204-B873-64C7980873C3}.Debug|AVR.ActiveCfg = Debug|AVR
+		{0F219E54-F79B-4204-B873-64C7980873C3}.Debug|AVR.Build.0 = Debug|AVR
+		{0F219E54-F79B-4204-B873-64C7980873C3}.Release|AVR.ActiveCfg = Release|AVR
+		{0F219E54-F79B-4204-B873-64C7980873C3}.Release|AVR.Build.0 = Release|AVR
+		{20E844C9-ABE9-4731-9441-9C1EBAB64E64}.Debug|AVR.ActiveCfg = Debug|AVR
+		{20E844C9-ABE9-4731-9441-9C1EBAB64E64}.Debug|AVR.Build.0 = Debug|AVR
+		{20E844C9-ABE9-4731-9441-9C1EBAB64E64}.Release|AVR.ActiveCfg = Release|AVR
+		{20E844C9-ABE9-4731-9441-9C1EBAB64E64}.Release|AVR.Build.0 = Release|AVR
+		{BB2C60AC-9332-4C87-8749-69F671FACDC7}.Debug|AVR.ActiveCfg = Debug|AVR
+		{BB2C60AC-9332-4C87-8749-69F671FACDC7}.Debug|AVR.Build.0 = Debug|AVR
+		{BB2C60AC-9332-4C87-8749-69F671FACDC7}.Release|AVR.ActiveCfg = Release|AVR
+		{BB2C60AC-9332-4C87-8749-69F671FACDC7}.Release|AVR.Build.0 = Release|AVR
+		{16068E77-23A6-4315-A35F-D71097CA8EE5}.Debug|AVR.ActiveCfg = Debug|AVR
+		{16068E77-23A6-4315-A35F-D71097CA8EE5}.Debug|AVR.Build.0 = Debug|AVR
+		{16068E77-23A6-4315-A35F-D71097CA8EE5}.Release|AVR.ActiveCfg = Release|AVR
+		{16068E77-23A6-4315-A35F-D71097CA8EE5}.Release|AVR.Build.0 = Release|AVR
+		{28356B03-DAED-43DE-B083-1EBE76C0EA8C}.Debug|AVR.ActiveCfg = Debug|AVR
+		{28356B03-DAED-43DE-B083-1EBE76C0EA8C}.Debug|AVR.Build.0 = Debug|AVR
+		{28356B03-DAED-43DE-B083-1EBE76C0EA8C}.Release|AVR.ActiveCfg = Release|AVR
+		{28356B03-DAED-43DE-B083-1EBE76C0EA8C}.Release|AVR.Build.0 = Release|AVR
+		{01562194-0645-47C4-BF54-F6C462481760}.Debug|AVR.ActiveCfg = Debug|AVR
+		{01562194-0645-47C4-BF54-F6C462481760}.Debug|AVR.Build.0 = Debug|AVR
+		{01562194-0645-47C4-BF54-F6C462481760}.Release|AVR.ActiveCfg = Release|AVR
+		{01562194-0645-47C4-BF54-F6C462481760}.Release|AVR.Build.0 = Release|AVR
+		{9A914A2A-D2BC-4B67-84A1-397A4491F6F0}.Debug|AVR.ActiveCfg = Debug|AVR
+		{9A914A2A-D2BC-4B67-84A1-397A4491F6F0}.Debug|AVR.Build.0 = Debug|AVR
+		{9A914A2A-D2BC-4B67-84A1-397A4491F6F0}.Release|AVR.ActiveCfg = Release|AVR
+		{9A914A2A-D2BC-4B67-84A1-397A4491F6F0}.Release|AVR.Build.0 = Release|AVR
+		{4C911888-7DC7-432D-99F4-EADED8543758}.Debug|AVR.ActiveCfg = Debug|AVR
+		{4C911888-7DC7-432D-99F4-EADED8543758}.Debug|AVR.Build.0 = Debug|AVR
+		{4C911888-7DC7-432D-99F4-EADED8543758}.Release|AVR.ActiveCfg = Release|AVR
+		{4C911888-7DC7-432D-99F4-EADED8543758}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
